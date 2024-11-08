@@ -139,6 +139,12 @@ namespace EmfAnalyzer
             Result.Add($"  P({p})");
         }
 
+        public void OnEmfSetWorldTransform(EmfRecord record, XForm xform)
+        {
+            Result.Add($"■ {record}");
+            Result.Add($"  XForm({xform})");
+        }
+
         public void OnEmfModifyWorldTransform(EmfRecord record, XForm xform, ModifyWorldTransformMode mode)
         {
             Result.Add($"■ {record}");

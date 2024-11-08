@@ -18,6 +18,7 @@
         void OnEmfSetWindowExtEx(EmfRecord record, SizeL s);
         void OnEmfSetViewportExtEx(EmfRecord record, SizeL s);
         void OnEmfSetMapMode(EmfRecord record, MapMode mode);
+        void OnEmfSetWorldTransform(EmfRecord record, XForm xform);
         void OnEmfModifyWorldTransform(EmfRecord record, XForm xform, ModifyWorldTransformMode mode);
         void OnEmfSetRop2(EmfRecord record, BinaryRasterOperation op);
         void OnEmfSetMiterLimit(EmfRecord record, UInt32 miterLimit);

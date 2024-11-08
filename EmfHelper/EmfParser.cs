@@ -457,6 +457,13 @@ namespace EmfHelper
                         );
                 }
                 break;
+
+                case EmfRecordType.EMR_SETWORLDTRANSFORM:
+                    mListener.OnEmfSetWorldTransform(
+                        record,
+                        EmfConverter.ToXForm(data, 0)
+                        );
+                    break;
                 default:
                     mListener.OnNotImplementRecord(record);
                     break;
